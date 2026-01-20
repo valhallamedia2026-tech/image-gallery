@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1 class="title">Responsive Image Gallery</h1>
+
+    <!-- Gallery Grid -->
+    <div class="gallery">
+        <!-- Each image gets a data-index so JS can track navigation -->
+        <img src="images/img1.jpg" alt="Gallery Image 1" data-index="0">
+        <img src="images/img2.jpg" alt="Gallery Image 2" data-index="1">
+        <img src="images/img3.jpg" alt="Gallery Image 3" data-index="2">
+        <img src="images/img4.jpg" alt="Gallery Image 4" data-index="3">
+        <img src="images/img5.jpg" alt="Gallery Image 5" data-index="4">
+        <img src="images/img6.jpg" alt="Gallery Image 6" data-index="5">
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <span id="closeBtn" class="close">&times;</span>
+        <img id="modalImg" class="modal-content">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
