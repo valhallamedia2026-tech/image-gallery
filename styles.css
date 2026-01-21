@@ -7,15 +7,20 @@ body {
 
 .title {
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    font-weight: 300;
 }
 
 /* Responsive grid layout */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 10px;
-    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    max-width: 1400px; 
+    margin: 0 auto;
 }
 
 .gallery img {
@@ -23,12 +28,12 @@ body {
     height: auto;
     object-fit: cover;
     cursor: pointer;
-    border-radius: 6px;
-    transition: transform 0.2s ease;
+    border-radius: 8px;
+    transition: transform 0.25s ease, box-shawdow 0.25s ease;
 }
 
-.gallery img:hover {
-    transform: scale(1.03);
+.gallery img:hover { transform: scale(1.02);        
+                    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 /* Modal styling */
@@ -48,9 +53,10 @@ body {
 .modal-content {
     display: block;
     margin: auto;
-    max-width: 95%;
-    max-height: 95vh;
-    border-radius: 8px;
+    max-width: 90%;
+    max-height: 90vh;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.4);
 }
 
 .close {
