@@ -14,6 +14,16 @@ body {
     letter-spacing: 1px;
 }
 
+/* Full‑width hero video */
+.hero-video {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* adjust if you want it taller/shorter */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px; /* spacing before the gallery */
+}
+
 /* Responsive grid layout */
 .gallery {
     display: grid;
@@ -38,8 +48,9 @@ body {
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.gallery img:hover { transform: scale(1.02);        
-                    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+.gallery img:hover { 
+    transform: scale(1.02);        
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .gallery video {
@@ -102,4 +113,3 @@ body {
 .navbar a {
     font-size: 1rem;
 }
-
